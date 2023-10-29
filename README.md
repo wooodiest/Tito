@@ -35,9 +35,22 @@ void Engine::AddComponents()
 
 - taking air resistance - possible options: true, false
 
+## Default physical values
+All values with a unit have a unit consistent with SI
+
+- Gravitational acceleration = {0.0, -9.81}
+- Energy remained in the body after the collision = 70%
+- Air resistance is expressed by the formula: `0.5 * CrossSectionalArea * AirDensity * DragCoefficient * Velocity * |Velocity|`
+  
+  	- AirDensity = 1.225
+  
+  	- DragCoefficient = 0.47
+- Only the X axis is considered physical
+
+All the above values and many more can be changed in the Engine Properties section in [Engine.cpp](Tito/src/Core/Engine.cpp)
 ## Build
 
 Clone the repository with `git clone https://github.com/wooodiest/Tito`.
 
-Project tested in Visual Studio 2022. To generate the project run [GenerateProject.bat](GenerateProject.bat)
+Project tested in Visual Studio 2022. To generate the project run `GenerateProject.bat`
 
