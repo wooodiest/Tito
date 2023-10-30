@@ -46,11 +46,17 @@ All values with a unit have a unit consistent with SI
   
   	- DragCoefficient = 0.47
 - Only the X axis is considered physical
-
+  
 All the above values and many more can be changed in the Engine Properties section in [Engine.cpp](Tito/src/Core/Engine.cpp)
+## Controls
+
+- Change display scale - `Scroll wheel`
+- Camera movmment - `W` `A` `S` `D`
+- Reset camera - `Shift`
+
 ## Build
 
-Clone the repository with `git clone https://github.com/wooodiest/Tito`.
+Clone the repository with `git clone https://github.com/wooodiest/Tito`
 
 Project tested in Visual Studio 2022. To generate the project run `GenerateProject.bat`
 
